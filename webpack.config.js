@@ -10,11 +10,10 @@ module.exports = {
     },
     devServer: {
         contentBase:path.join(__dirname + "/docs/"),
-        static: {
-            directory: path.join(__dirname, 'docs'),
-          },
-          compress: true,
-          port: 9000,
+        inline: true,
+        hot: true,
+        host: "localhost",
+        port: 5500,
         historyApiFallback: true,
       },
     module: {
