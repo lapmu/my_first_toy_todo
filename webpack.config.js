@@ -7,6 +7,13 @@ module.exports = {
         path: path.resolve(__dirname, 'docs'),
         filename: 'main.js'
     },
+    devServer: {
+        static: {
+          directory: path.join(__dirname, 'docs'),
+        },
+        compress: true,
+        port: 9000,
+      },
     module: {
         rules: [
             {

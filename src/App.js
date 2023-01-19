@@ -22,7 +22,6 @@ function App() {
   // const [isTodoList, setTodoList] = useState(todoList)
   const dispatch = useDispatch()
   const state = useSelector(state => state)
-
   // 상태 끌어올리기 (새로운 todo 만드는 함수)
   // const toDo = (content, idx) =>{
   //   // let data = {
