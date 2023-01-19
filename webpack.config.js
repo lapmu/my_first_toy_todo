@@ -8,11 +8,7 @@ module.exports = {
         filename: 'main.js'
     },
     devServer: {
-        static: {
-          directory: path.join(__dirname, 'docs'),
-        },
-        compress: true,
-        port: 9000,
+        historyApiFallback: true,
       },
     module: {
         rules: [
