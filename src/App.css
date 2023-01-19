@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: linear-gradient(to bottom, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%);
+  width: 100vw;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:space-around;
+  height: 80vh;
+  width: 80vw;
+  background-color: #fffbda;
+  margin-top: 10vh;
+}
+
+.sidebar{
+  display: flex;
+  height: 80vh;
+  width: 5vw;
+  margin-top: 10vh;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
+.side, .side0, .side1, .side2, .side3, .side4, .side5, .side6, .side7{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 10%;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 10%;
+  font-size: 2vw;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+.side{
+  background-color: #c1ec52;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.side0, .hexagon0{
+  background-color: #fffc99;
+}
+
+.side1, .hexagon1{
+  background-color: #b6ffed;
+}
+
+.side2, .hexagon2{
+  background-color: #fff265;
+}
+
+.side3, .hexagon3{
+  background-color: #0ffff7;
+}
+
+.side4, .hexagon4{
+  background-color: #ffae92;
+}
+
+.side5, .hexagon5{
+  background-color: #a9ffba;
+}
+
+.side6, .hexagon6{
+  background-color: #ffc7ec;
+}
+
+.side7{
+  background-color: #44a0ff;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  width: 80%;
+  background-color: #ffefc5;
+}
+
+.display{
+  height: 70%;
+  width: 80%;
+  background-color: #ffefc5;
+}
+
+.sevenDays{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.seven_up, .seven_down{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  height: 45%;
+  width: 90%;
+
+}
+
+.a0, .a1, .a2, .a3, .a4, .a5, .a6{
+  width: 20%;
+  position: relative;
+}
+
+.a0::after, .a1::after, .a2::after, .a3::after, .a4::after, .a5::after, .a6::after{
+  content: "";
+  display: block;
+  padding-bottom: 86.6%;
+}
+
+.hexagon_border{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+
+.hexagon0, .hexagon1, .hexagon2, .hexagon3, .hexagon4, .hexagon5, .hexagon6{
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+}
+
+.hexagon_day, .hexagon_complete{
+  width: 70%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+
+.table{
+  display: table;
+  margin: 10px;
+}
+
+.todo_list, .row{
+  display: table-row;
+  
+}
+
+.todo_list{
+  background-color: #cd9c56;
+}
+.col, .col1, .col2, .col3{
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid #cd9c56;
+  padding: 5px;
+  font-size: 1.3vw;
+}
+
+.col{
+  width: 10%;
+}
+
+.col1{
+  width: 50%;
+}
+
+.col2{
+  width: 20%;
+}
+
+.col3{
+  width: 20%;
+}
+
+.basic{
+  width: 300%;
+}
+
+.todo_display{
+  display: flex;
+  flex-direction: column;
+}
+
+.todoInput{
+  display: flex;
+  margin: 10px;
+}
+
+.todoInput_input{
+  flex: 4 4 0;
+  padding: 5px;
+  background-color: #fffbda;
+  border-color: #cd9c56;
+}
+
+.todoInput_button{
+  flex: 1 1 0;
+  padding: 5px;
+  background-color: #cd9c56;
+}
+
+.title_content, .input_title{
+  font-size: 3vw;
 }
