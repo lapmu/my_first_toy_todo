@@ -5,9 +5,11 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'docs'),
-        filename: 'main.js'
+        filename: 'main.js',
+        publicPath: "/docs/"
     },
     devServer: {
+        contentBase:path.join(__dirname + "/docs/"),
         static: {
             directory: path.join(__dirname, 'docs'),
           },
