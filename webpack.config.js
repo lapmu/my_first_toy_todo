@@ -8,14 +8,6 @@ module.exports = {
         filename: 'main.js',
         publicPath: "/docs/"
     },
-    devServer: {
-        contentBase:path.join(__dirname + "/docs/"),
-        inline: true,
-        hot: true,
-        host: "localhost",
-        port: 5500,
-        historyApiFallback: true,
-      },
     module: {
         rules: [
             {
