@@ -1,4 +1,4 @@
-# todo-list 사이트 (게시판 & 방명록)
+# todo-list 사이트 (CRUD)
 
 > React를 연습하기 위한 프로젝트입니다.
 
