@@ -24,7 +24,9 @@
     "dev-server": "webpack-dev-server --open",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -64,5 +66,5 @@
   "bugs": {
     "url": "https://github.com/lapmu/my_first_toy_todo/issues"
   },
-  "homepage": "https://github.com/lapmu/my_first_toy_todo#readme"
+  "homepage": "https://lapmu.github.io/my_first_toy_todo/"
 }
