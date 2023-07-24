@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/my_first_toy_todo/static/css/main.a9ee8d61.css",
+    "main.js": "/my_first_toy_todo/static/js/main.b60ef520.js",
+    "index.html": "/my_first_toy_todo/index.html",
+    "main.a9ee8d61.css.map": "/my_first_toy_todo/static/css/main.a9ee8d61.css.map",
+    "main.b60ef520.js.map": "/my_first_toy_todo/static/js/main.b60ef520.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9ee8d61.css",
+    "static/js/main.b60ef520.js"
+  ]
+}
